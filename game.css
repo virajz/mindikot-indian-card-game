@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#table {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.player-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.player-area div {
+	display: flex;
+}
+
+.card {
+	font-size: 300px;
+	line-height: 1;
+	cursor: pointer;
+	margin-right: -120px;
+	background: rgba(255, 255, 255);
+}
+
+.hearts,
+.diamonds {
+	color: rgb(235 48 48);
+}
+
+.spades,
+.clubs {
+	color: rgb(21 21 21);
+}

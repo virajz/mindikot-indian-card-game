@@ -1,0 +1,88 @@
+:root {
+	--elem-height: 300px;
+	--elem-height-half: calc((var(--elem-height)) / 2);
+	--elem-width: 800px;
+	--elem-width-half: calc((var(--elem-width)) / 2);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	overflow: hidden;
+}
+
+#table {
+	height: 100vh;
+	position: relative;
+}
+
+.player-area {
+	border: 1px solid black;
+	padding: 1rem;
+	width: var(--elem-width);
+	height: var(--elem-height);
+	position: absolute;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#player-1 {
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/* #player-x {
+	right: 0;
+	transform-origin: 100% 100%;
+	rotate: -90deg;
+	top: calc(50% - var(--elem-height));
+	translate: 0% calc(-50% - var(--elem-width-half) + var(--elem-height-half));
+} */
+
+#player-2 {
+	right: 0;
+	top: 50%;
+	translate: 0 -50%;
+	translate: 50% -50%;
+	rotate: 270deg;
+	translate: calc(50% - var(--elem-height-half)) -50%;
+}
+
+#player-3 {
+	top: 0;
+	rotate: 180deg;
+	left: 50%;
+	transform: translate(50%, 0);
+}
+
+#player-4 {
+	left: 0;
+	top: 50%;
+	translate: 0 -50%;
+	translate: -50% -50%;
+	rotate: 90deg;
+	translate: calc(-50% + var(--elem-height-half)) -50%;
+}
+
+.card {
+	font-size: 280px;
+	line-height: 1;
+}
+
+.hearts,
+.diamonds {
+	color: rgb(235 48 48);
+}
+
+.spades,
+.clubs {
+	color: rgb(21 21 21);
+}
