@@ -1,4 +1,4 @@
-import { Deck } from './Deck.js'
+import { Deck } from './modules/Deck.js'
 
 let deck = new Deck()
 

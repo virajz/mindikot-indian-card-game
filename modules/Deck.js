@@ -1,4 +1,4 @@
-import { Card } from './modules/Card.js'
+import { Card } from './Card.js'
 
 export class Deck {
 	constructor(config) {
